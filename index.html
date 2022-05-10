@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" type="module" defer></script>
+    <title>Testy</title>
+</head>
+<body>
+    <!-- toolbar -->
+    <section class="toolbar">
+        <button id="move_tool" title="Move Tool [V]">🖱️</button>
+        <button id="edit_tool" title="Node Tool [A]">🔧</button>
+        <button id="path_tool" title="Pen Tool [P]">🖋️</button>
+        <button id="rect_tool" title="Rectangle Tool [M]">🧊</button>
+        <button id="circ_tool" title="Eliplse Tool [O]">🧶</button>
+        <button id="text_tool" title="Text Tool [T]">📜</button> 
+        <button id="pick_tool" title="Colour Picker Tool [I]">👁️</button>
+        <button id="view_tool" title="View Tool [H]">🖐️</button>
+        <button id="zoom_tool" title="Zoom Tool [Z]">🔍</button>
+    </section>
+    <!-- workspace -->
+    <section class="work-space">
+        <svg width="100%" height="100%" viewBox="0 0 500 500" id="canvas" class="canvas">
+
+        </svg>
+    </section>
+    <section class="inspector">
+        <!-- transform -->
+        <section class="transform">
+            <h3 class="inspector-section-title">Transform</h3>
+            <div>
+                <div class="sub-transform">
+                    <div class="sub-sub-transform">
+                        <div class="input-box">
+                            <label for="posX">X:</label>
+                            <input id="posX" value=1 type="number" name="posX">
+                        </div>
+                        <div class="input-box">
+                            <label for="posX">Y:</label>
+                            <input id="posY" value=1 type="number" name="posY">
+                        </div>
+                    </div>
+                    <div class="sub-sub-transform">
+                        <div class="input-box">
+                            <label for="sizeX">W:</label>
+                            <input id="sizeX" value=20 type="number" name="sizeX">
+                        </div>
+                        <div class="input-box">
+                            <label for="sizeY">H:</label>
+                            <input id="sizeY" value=20 type="number" name="sizeY">
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-transform">
+                    <div class="input-box">
+                        <label for="rot">R:</label>
+                        <input id="rot" value=0 type="number" name="rot">
+                    </div>
+                    <div class="input-box">
+                        <label for="skew">S:</label>
+                        <input id="skew" value=0 type="number" name="skew">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- layers -->
+        <section class="layers" id="layers">
+            <h3 class="inspector-section-title">Layers</h3>
+        </section>
+    </section>
+</body>
+</html>
